@@ -1,0 +1,192 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "birthTime",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "confirmedBirthTime",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "seedAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "Born",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "about",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "entityName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "entityMission",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "birth",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "confirmedOnChain",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "seed",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "birthTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "birth",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "confirmedOnChain",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mission",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "seedOffering",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Adi",
+			"details": "All state is set in the constructor. No state-changing functions exist.",
+			"kind": "dev",
+			"methods": {},
+			"title": "Genesis — This is the immutable founding record of Adaptive Resilience Action",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"about()": {
+					"notice": "Tell me about this entity."
+				},
+				"birthTime()": {
+					"notice": "When was this entity born?"
+				},
+				"mission()": {
+					"notice": "Why does this entity exist?"
+				},
+				"name()": {
+					"notice": "What is this entity?"
+				},
+				"seedOffering()": {
+					"notice": "How much was irrevocably sealed at founding?"
+				}
+			},
+			"notice": "This contract has no owner, no admin, and no withdrawal function.         It exists as a permanent, irrevocable founding act on Ethereum.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Genesis.sol": "Genesis"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Genesis.sol": {
+			"keccak256": "0x26b5549b1291cb0d5909b31c6ad3ea7df51f80b4ca47558ba5455ccade918545",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://08336f00cadcf55bed8ba3e53bfc76d90c1d4629e8d2ad45a667a289d2f9fa38",
+				"dweb:/ipfs/QmTxbZP9MTkiYVkX4PncU6KqkVWHu1wEAp3kgXfvWCVCkq"
+			]
+		}
+	},
+	"version": 1
+}
